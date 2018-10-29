@@ -1,0 +1,28 @@
+<div class="card">
+    <!--Card content-->
+    <div class="card-cascade wider text-center">
+        <!--Title-->
+        <div class="card-header">
+            <h2 class="h2-responsive mb-2">Editar topic</h2>
+        </div>
+    </div>
+    <!--Text-->
+    <div class="card-body" >
+        <div class="md-form">
+            <p>Id</p>
+            <input mdbInputDirective type="text" id="idTopic" class="form-control" value="{{idTopic}}" readonly>
+        </div>
+        <div class="md-form">
+            <p>name</p>
+            <input type="text" class="form-control" id="nameTopic" [(ngModel)]="nameTopic" aria-describedby="sizing-addon2">
+        </div>
+        <div class="md-form">
+            <p>description</p>
+            <input type="text" class="form-control" id="descriptionTopic" [(ngModel)]="descriptionTopic" aria-describedby="sizing-addon2">
+        </div>
+        <br>
+        <a class="btn btn-primary waves-light" mdbWavesEffect (click)="aceptar()">Aceptar</a>
+        <a class="btn btn-warning waves-light" mdbWavesEffect (click)="cancelar()">Cancelar</a>
+    </div>
+  
+  </div>

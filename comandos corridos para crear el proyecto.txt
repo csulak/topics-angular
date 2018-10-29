@@ -1,0 +1,18 @@
+  481  ng new topics-angular --routing
+  482  npm install ng2-bootstrap-modal
+  483  npm install popper
+  484  npm install bootstrap
+  485  npm install @fortawesome/fontawesome-svg-core
+  486  npm install @fortawesome/free-solid-svg-icons
+  487  npm install @fortawesome/angular-fontawesome
+
+  491  npm install
+
+  493  npm install jquery
+
+  496  ng g c course -is
+  497  ng g c topics -is
+  
+  498  npm install mydatepicker
+  499  npm install --save @angular/material @angular/cdk
+
