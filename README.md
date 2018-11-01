@@ -30,7 +30,8 @@ Table of Contents:
 2.Unzip it, on a known place for example c:\dev\
 
 3.Set the windows environment variable path for apache maven (in windows 10 is very 
-simple, just enter environment on the start menu and search environment as shown on the next images): 
+simple, just enter environment on the start menu and search environment as shown on the next link):
+
 [Install Maven in Windows](https://docs.google.com/document/d/1wCpLwV6_6ypIVP0is2JclZqHuhpqJZRbbtm4EEeW5WE/)
 
 ## Download Redis
