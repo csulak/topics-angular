@@ -8,8 +8,8 @@ Table of Contents:
 
 - [Introduction](#introduction)
 - [Supported Libraries](#supported-libraries)
-- [Install Maven] (#install-maven)
-- [Download Redis] (#download-redis)
+- [Install Maven](#install-maven)
+- [Download Redis](#download-redis)
 - [How to start the project](#how-to-start-the-project)
 - [Health Check and Swagger](#health-check-and-swagger)
 - [Further Help](#further-help)
