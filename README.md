@@ -69,11 +69,11 @@ mvn spring-boot:run
 
 ## Health Check and Swagger
 
-In order to check if the project is correctly running you can hit the next healthcheck endpoint
+In order to check if the project is correctly running, you can hit the next healthcheck endpoint
 [Health check](http://localhost:8090/dcl-amenities-vas/healthcheck)
 
-To see which endpoints has the project and how you could hit them. You can review this information here
-[Swagger-ui](http://localhost:8090/dcl-amenities-vas/swagger-ui.html#/)
+To see which endpoints have the project and how you could hit them. You can review this information here
+[Swagger-UI](http://localhost:8090/dcl-amenities-vas/swagger-ui.html#/)
 
 ## Further help
 
