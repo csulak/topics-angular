@@ -19,24 +19,12 @@ export class TopicsService {
     return this.http.get('http://localhost:8081/topics').toPromise()
   }
 
-
-  
-/*    getTopicById(id: string) {
-      console.log("el id en topics services es: " + id)
-
-      return this.http.get('http://localhost:8081/topics' + id).pipe(map(res => this.topicAsJson(res.json())))
-    }
-  */
   async getTopicById(id: string) {
-    console.log("el id en topics services es: " + id)
-
-    //return this.http.get('http://localhost:8081/topics/' + id).toPromise()
-    
     const res = await this.http.get('http://localhost:8081/topics/' + id).toPromise()
     return Topics.fromJSON(res.json())
   }
 
-  crearTopic(topic: Topics) {
+   async crearTopic(topic: Topics) {
     this.http.post('http://localhost:8081/topics', topic.toJSON()).subscribe()
   }
 

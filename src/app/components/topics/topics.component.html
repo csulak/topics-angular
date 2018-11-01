@@ -18,7 +18,9 @@
           <a [routerLink]="['/editarTopic', topic.id]">{{topic.description}}</a>
         </td>
         <td class="col-xs-2">
-          <button class="btn btn-block btn-danger" (click)="eliminarTopic(topic.id)">Eliminar</button>
+          <button type="button" title="Eliminar Topic" class="btn btn-danger" (click)="eliminarTopic(topic.id)">
+            <fa-icon icon="trash"></fa-icon>
+          </button>
         </td>
       </tr>
     </tbody>
@@ -26,6 +28,7 @@
 </div>
 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NuevoEventoModal">Nuevo Topic</button>
+
 <div class="modal fade" id="NuevoEventoModal" tabindex="-1" role="dialog" aria-labelledby="Crear Evento" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -39,22 +42,27 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Id del topic:</label>
+            <label class="text-danger"> *(campo obligatorio)</label>
             <input [(ngModel)]="id" name="id" type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Name Del topic:</label>
+            <label class="text-danger"> *(campo obligatorio)</label>
             <input [(ngModel)]="name" name="name" type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Description Del topic:</label>
+            <label class="text-danger"> *(campo obligatorio)</label>
             <input [(ngModel)]="description" name="description" type="text" class="form-control" id="recipient-name">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="limpiarDatos()">Close</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="crearTopic() ">Crear Evento</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="crearTopic()" [disabled]="isIncorrect()">Crear
+          Topic</button>
       </div>
+
     </div>
   </div>
 </div>

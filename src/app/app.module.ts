@@ -9,13 +9,13 @@ import { HttpModule } from '@angular/http'
 // Font Awesome para los íconos
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserCheck, faUserMinus, faCalendarCheck, faTasks} from '@fortawesome/free-solid-svg-icons'; 
+import { faUserCheck, faUserMinus, faCalendarCheck, faTasks, faTrash } from '@fortawesome/free-solid-svg-icons'; 
 import { CourseComponent } from './components/course/course.component';
 import { TopicsComponent } from './components/topics/topics.component';
 import { EditarTopicComponent } from './components/editar-topic/editar-topic.component'
 
 
-library.add(faUserCheck, faUserMinus, faCalendarCheck, faTasks)
+library.add(faUserCheck, faUserMinus, faCalendarCheck, faTasks, faTrash)
 
 @NgModule({
   declarations: [

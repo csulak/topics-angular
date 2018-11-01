@@ -14,9 +14,9 @@ export class TopicsComponent {
   id: string
   name: string
   description: string
-  //topic: Topics
   topicsPosibles: Array<Topics>[]
   errors = []
+  isAllFieldsCompleted = true
 
   constructor(private topicsService: TopicsService, private router: Router, private route: ActivatedRoute) {
     try {
@@ -49,13 +49,15 @@ export class TopicsComponent {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false
   }*/
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.isAllFieldsCompleted = true
+  }
 
-  crearTopic() {
-    let topic = new Topics(this.id, this.name, this.description)
-    this.topicsService.crearTopic(topic)
-    this.limpiarDatos()
-    this.navegarAHome()
+   async crearTopic() {
+      let topic = new Topics(this.id, this.name, this.description)
+      await this.topicsService.crearTopic(topic)
+      this.limpiarDatos()
+      this.navegarAHome()
   }
 
   async eliminarTopic(idd: string) {
@@ -71,6 +73,11 @@ export class TopicsComponent {
     this.description = ''
   }
 
+  isIncorrect(){
+    return (this.id == null || this.name == null || this.description == null ||
+      this.id == "" || this.name == "" || this.description == ""
+      )
+  }
   navegarAHome() {
     this.router.navigate(['/topics'])
   }
