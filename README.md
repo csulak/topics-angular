@@ -70,13 +70,13 @@ mvn spring-boot:run
 ## Health Check and Swagger
 
 In order to check if the project is correctly running you can hit the next healthcheck endpoint
-http://localhost:8090/dcl-amenities-vas/healthcheck
+[Health check](http://localhost:8090/dcl-amenities-vas/healthcheck)
 
 To see which endpoints has the project and how you could hit them. You can review this information here
-http://localhost:8090/dcl-amenities-vas/swagger-ui.html#/ 
+[Swagger-ui](http://localhost:8090/dcl-amenities-vas/swagger-ui.html#/)
 
 ## Further help
 
 - Slack `#studio-calypso` channel
 
-- [Wiki] (https://wiki.wdpro.wdig.com/pages/viewpage.action?pageId=137112339)
+- [Wiki](https://wiki.wdpro.wdig.com/pages/viewpage.action?pageId=137112339)
