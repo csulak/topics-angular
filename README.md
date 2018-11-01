@@ -21,7 +21,7 @@ Table of Contents:
 | 3.3.3   | 8 | 2.8.17 |
 
 
-## [Install Maven]
+## Install Maven
 
 ### Steps
 
@@ -42,7 +42,7 @@ simple, just enter environment on the start menu and search environment as shown
 
 
 
-## [Download Redis]
+## Download Redis
 
 Download redis 2.8.17 from here, unzip it and run redis-server.exe.
 
