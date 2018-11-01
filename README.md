@@ -1,27 +1,82 @@
-# TopicsAngular
+# Introduction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+**Amenities View Assembly Service**
 
-## Development server
+This project was generated with Java Spring Boot
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Table of Contents:
 
-## Code scaffolding
+- [Introduction](#introduction)
+- [Supported Libraries](#supported-libraries)
+- [Install Maven] (#install-maven)
+- [Download Redis] (#download-redis)
+- [How to start the project](#how-to-start-the-project)
+- [Health Check and Swagger](#health-check-and-swagger)
+- [Further Help](#further-help)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Supported Libraries
 
-## Build
+|   Maven  |  Java version  | Redis |
+|----------|--------|--------|
+| 3.3.3   | 8 | 2.8.17 |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## [Install Maven]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Steps
 
-## Running end-to-end tests
+1.Download and paste the maven 3.3.3 from here.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+2.Unzip it, on a known place for example c:\dev\
+
+3.Set the windows environment variable path for apache maven (in windows 10 is very 
+simple, just enter environment on the start menu and search environment as shown on the next images): 
+
+
+
+
+
+
+
+
+
+
+
+## [Download Redis]
+
+Download redis 2.8.17 from here, unzip it and run redis-server.exe.
+
+## [How to start the project]
+
+The following commands and tasks are available for use during development:
+
+### On cloned repository folder
+
+```bash
+mvn clean install
+```
+
+### To run the project you need to execute the following command
+
+```bash 
+mvn spring-boot:run
+```
+
+### For different ports for each project you should run it
+```bash 
+ mvn spring-boot:run -Dserver.port={port}
+```
+
+## Health Check and Swagger
+
+In order to check if the project is correctly running you can hit the next healthcheck endpoint
+http://localhost:8090/dcl-amenities-vas/healthcheck
+
+To see which endpoints has the project and how you could hit them. You can review this information here
+http://localhost:8090/dcl-amenities-vas/swagger-ui.html#/ 
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Slack `#studio-calypso` channel
+
+- [Wiki] (https://wiki.wdpro.wdig.com/pages/viewpage.action?pageId=137112339)
