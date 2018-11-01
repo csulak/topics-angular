@@ -31,16 +31,7 @@ Table of Contents:
 
 3.Set the windows environment variable path for apache maven (in windows 10 is very 
 simple, just enter environment on the start menu and search environment as shown on the next images): 
-
-
-
-
-
-
-
-
-
-
+[Install Maven in Windows](https://docs.google.com/document/d/1wCpLwV6_6ypIVP0is2JclZqHuhpqJZRbbtm4EEeW5WE/)
 
 ## Download Redis
 
@@ -80,3 +71,6 @@ To see which endpoints have the project and how you could hit them. You can revi
 - Slack `#studio-calypso` channel
 
 - [Wiki](https://wiki.wdpro.wdig.com/pages/viewpage.action?pageId=137112339)
+
+
+
