@@ -67,6 +67,8 @@ In order to check if the project is correctly running, you can hit the next heal
 To see which endpoints have the project and how you could hit them. You can review this information here
 [Swagger-UI](http://localhost:8090/dcl-amenities-vas/swagger-ui.html#/)
 
+`Note: If you are running the project in different port (8090) you must to specify the port in previous links`
+
 ## Further help
 
 - Slack `#studio-calypso` channel
