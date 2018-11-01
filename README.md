@@ -25,7 +25,8 @@ Table of Contents:
 
 ### Steps
 
-1.Download and paste the maven 3.3.3 from here.
+1.Download and paste the maven 3.3.3 from [here](https://drive.google.com/file/d/1qJSDhyvUikcyOlEfgSG6ba2w7zvr8ZSV/view).
+
 
 2.Unzip it, on a known place for example c:\dev\
 
@@ -38,7 +39,9 @@ simple, just enter environment on the start menu and search environment as shown
 
 Download redis 2.8.17 from here, unzip it and run redis-server.exe.
 
-## [How to start the project]
+[Redis 2.8.17](https://drive.google.com/file/d/1dArpMpvbAPObYIPDuFbP0gwF4el2E5mc/view)
+
+## How to start the project
 
 The following commands and tasks are available for use during development:
 
