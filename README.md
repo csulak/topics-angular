@@ -77,6 +77,3 @@ To see which endpoints have the project and how you could hit them. You can revi
 - Slack `#studio-calypso` channel
 
 - [Wiki](https://wiki.wdpro.wdig.com/pages/viewpage.action?pageId=137112339)
-
-
-
