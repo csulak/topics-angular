@@ -18,7 +18,7 @@ Table of Contents:
 
 |   Maven  |  Java  |  Redis  |
 |----------|--------|--------|
-| 3.3.3 |  8 | 2.8.17 |
+| 3.3.3 | 8 | 2.8.17 |
 
 
 ## Install Maven
