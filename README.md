@@ -16,7 +16,7 @@ Table of Contents:
 
 ## Supported Libraries
 
-|   Maven  |  Java version  | Redis |
+|   Maven  |  Java  |  Redis  |
 |----------|--------|--------|
 | 3.3.3   | 8 | 2.8.17 |
 
