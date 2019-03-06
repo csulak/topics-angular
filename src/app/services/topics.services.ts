@@ -24,16 +24,24 @@ export class TopicsService {
     return Topics.fromJSON(res.json())
   }
 
-   async crearTopic(topic: Topics) {
+/*   async crearTopic(topic: Topics) {
     this.http.post('http://localhost:8081/topics', topic.toJSON()).subscribe()
+  }*/
+
+  async crearTopic(topic: Topics) {
+    return this.http.post('http://localhost:8081/topics', topic.toJSON()).toPromise()
   }
 
   async modificarTopic(topic: Topics) {
     this.http.put('http://localhost:8081/topics/' + topic.id, topic.toJSON()).subscribe()
   }
 
-  async eliminarTopic(id: string) {
+/*  async eliminarTopic(id: string) {
     this.http.delete('http://localhost:8081/topics/' + id).subscribe()
+  }*/
+
+  async eliminarTopic(id: string) {
+    return this.http.delete('http://localhost:8081/topics/' + id).toPromise()
   }
 
   private topicAsJson(topicJSON): Topics {

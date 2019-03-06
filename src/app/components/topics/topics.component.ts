@@ -14,7 +14,7 @@ export class TopicsComponent {
   id: string
   name: string
   description: string
-  topicsPosibles: Array<Topics>[]
+  topicsPosibles: Topics[]
   errors = []
   isAllFieldsCompleted = true
 
@@ -55,14 +55,23 @@ export class TopicsComponent {
 
    async crearTopic() {
       let topic = new Topics(this.id, this.name, this.description)
-      await this.topicsService.crearTopic(topic)
-      this.limpiarDatos()
-      this.navegarAHome()
+     
+      let callback = function(response){
+        this.limpiarDatos()
+        this.topicsPosibles.push(topic)
+      }
+      await this.topicsService.crearTopic(topic).then(callback.bind(this)).catch(()=> {})
+    //  this.navegarAHome()
   }
 
   async eliminarTopic(idd: string) {
-    console.log("quiero eliminar el siguiente ID: " + idd)
-    await this.topicsService.eliminarTopic(idd)
+    let callback = function (response) {
+      this.topicsPosibles = this.topicsPosibles.filter(function(value: Topics, index, topicsPosibles){
+        return value.id != idd
+      })
+    }
+
+    await this.topicsService.eliminarTopic(idd).then(callback.bind(this)).catch(() => {})
   }
 
 

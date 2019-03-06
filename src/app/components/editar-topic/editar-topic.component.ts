@@ -35,10 +35,16 @@ export class EditarTopicComponent implements OnInit {
     console.log("idTopic previo a asignar valor: " + this.idTopic)
     this.idTopic = this.route.snapshot.params['id']
     console.log("idTopic despues de asignar valor: " + this.idTopic)
-
+    
+  
     this.topic = await this.topicsService.getTopicById(this.idTopic)
     this.nameTopic = this.topic.name
     this.descriptionTopic = this.topic.description
+    
+    console.log("el nombre del topic original despues de asignar valor: " + this.topic.name)
+    console.log("el description del topic original despues de asignar valor: " + this.topic.description)
+
+
     // aca para ahorrarme de hacer uno X uno la asignacion. tengo que revisar lo que hizo fer en el ejemplo
     // de asyn y await fijate que en tarea.ts el metodo fromJson(asd) hace esto
     // de hacer el parseo de json a un objeto no se encarga el component.
