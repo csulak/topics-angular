@@ -27,3 +27,4 @@ Table of Contents:
 2. into the cloned project run "ng serve"
 
 3. default port 4200
+ 
