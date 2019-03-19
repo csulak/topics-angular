@@ -31,7 +31,7 @@ Table of Contents:
 
 ## About project
 
-Porject created in order to learn about web programming with Angular, bootstrap, how to connect with backend using rest services as HttpModule
+Project created in order to learn about web programming with Angular, bootstrap, how to connect with backend using rest services as HttpModule
 
 simple Java Spring boot backend service, persisted information on mysql 
 
