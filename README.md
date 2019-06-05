@@ -35,4 +35,9 @@ Project created in order to learn about web programming with Angular, bootstrap,
 
 simple Java Spring boot backend service, persisted information on mysql 
 
+**Problems running project**
+
+If you have problems when you run "ng serve". Execute "npm install" and "npm update". Then run "ng serve" again
+
+
 - [Related Java Project](https://github.com/csulak/springBootQuickStartWithSQL)
